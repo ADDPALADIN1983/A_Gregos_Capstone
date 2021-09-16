@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <EditText
+        android:id="@+id/edit_text_month"
+        style="@style/text_boxes_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Month"
+        app:layout_constraintEnd_toStartOf="@id/edit_text_day"
+        app:layout_constraintTop_toBottomOf="@+id/type_spinner" />
+
+    <EditText
+        android:id="@+id/edit_text_day"
+        style="@style/text_boxes_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/type_spinner" />
+
+    <EditText
+        android:id="@+id/edit_text_year"
+        style="@style/text_boxes_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        app:layout_constraintStart_toEndOf="@id/edit_text_day"
+        app:layout_constraintTop_toBottomOf="@id/type_spinner" />
+
+    <EditText
+        android:id="@+id/edit_text_date_description"
+        style="@style/text_boxes_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_month" />
+
+    <Spinner
+        android:id="@+id/type_spinner"
+        style="@style/text_boxes_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

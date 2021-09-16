@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a_gregos_capstone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddEditCareer" />
+        <activity android:name=".AddEditDate" />
+        <activity android:name=".AddEditNote" />
+        <activity android:name=".AddEditPastTimes" />
+        <activity android:name=".AddEditPerson" />
+        <activity android:name=".CareerListActivity" />
+        <activity android:name=".DetailedCareerView" />
+        <activity android:name=".DetailedDateView" />
+        <activity android:name=".DetailedNoteView" />
+        <activity android:name=".DetailedPastTimeView" />
+        <activity android:name=".DetailedPerson" />
+        <activity android:name=".ImportantDateListActivity" />
+        <activity android:name=".NoteListActivity" />
+        <activity android:name=".PastTimesListActivity" />
+        <activity android:name=".SearchFunctionsActivity" />
+    </application>
+
+</manifest>
